@@ -12,6 +12,8 @@ import ReduxStore from './ReduxStore';
 import GPTSearch from './GPTSearch';
 import WaysToWatch from './waystowatch';
 
+
+//to start project just write npm start
 const AppLayout=()=>{
   //this is the component which call all other components
   return(
