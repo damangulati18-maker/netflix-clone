@@ -61,10 +61,10 @@ const Home=()=>{
     const bgurl=()=>{
         if(lang==="en")
         {
-            return  "https://assets.nflxext.com/ffe/siteui/vlv3/8cc08720-ac1c-4364-bcbd-9495bf0308cd/web/IN-en-20260323-TRIFECTA-perspective_0b8c8e4e-71ee-48bd-8e16-da74f083a838_large.jpg"
+            return  "https://assets.nflxext.com/ffe/siteui/vlv3/5efeb1fd-55d2-4799-8d38-e59e15858b9c/web/IN-en-20260427-TRIFECTA-perspective_0933b420-0cb6-4e67-8e9d-3224dc64b517_large.jpg"
         }
         else{
-            return "https://assets.nflxext.com/ffe/siteui/vlv3/8cc08720-ac1c-4364-bcbd-9495bf0308cd/web/IN-hi-20260323-TRIFECTA-perspective_c9bb68a3-66f6-4bdc-b235-5c1b66b7fdaf_large.jpg"
+            return "https://assets.nflxext.com/ffe/siteui/vlv3/5efeb1fd-55d2-4799-8d38-e59e15858b9c/web/IN-hi-20260427-TRIFECTA-perspective_1ab0cc9d-9cba-4996-9c56-0a16b809b0a6_large.jpg"
         }
     }
     //here we are changing the initail value of langslice in slicestore with the value selected on select tag i.e e.target.value is being sent to redux store
