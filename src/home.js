@@ -61,10 +61,10 @@ const Home=()=>{
     const bgurl=()=>{
         if(lang==="en")
         {
-            return  "https://assets.nflxext.com/ffe/siteui/vlv3/5efeb1fd-55d2-4799-8d38-e59e15858b9c/web/IN-en-20260427-TRIFECTA-perspective_0933b420-0cb6-4e67-8e9d-3224dc64b517_large.jpg"
+            return  "https://assets.nflxext.com/ffe/siteui/vlv3/8027eb3f-343a-499d-9892-e683c12e3cb1/web/IN-en-20260608-TRIFECTA-perspective_d70af879-e407-4aee-8615-4c82210065d5_large.jpg"
         }
         else{
-            return "https://assets.nflxext.com/ffe/siteui/vlv3/5efeb1fd-55d2-4799-8d38-e59e15858b9c/web/IN-hi-20260427-TRIFECTA-perspective_1ab0cc9d-9cba-4996-9c56-0a16b809b0a6_large.jpg"
+            return "https://assets.nflxext.com/ffe/siteui/vlv3/8027eb3f-343a-499d-9892-e683c12e3cb1/web/IN-hi-20260608-TRIFECTA-perspective_7256ab8e-8316-43be-90b7-9bc7d5016072_large.jpg"
         }
     }
     //here we are changing the initail value of langslice in slicestore with the value selected on select tag i.e e.target.value is being sent to redux store
@@ -76,7 +76,11 @@ const Home=()=>{
     return(
         <div>
             <div className="relative">
-                <img className="w-full h-screen object-cover" src={bgurl()} alt="background"/>
+                <div className="relative w-full h-screen">
+                    <img className="w-full h-screen object-cover" src={bgurl()} alt="background"/>
+                    <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-black/80 to-transparent pointer-events-none" />
+                    <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black to-transparent pointer-events-none" />
+                </div>
                 <div className="absolute inset-0 bg-black/70"></div>
                 <div className="absolute left-0 top-0">
                     <div className="flex">
@@ -99,7 +103,7 @@ const Home=()=>{
                     </div>
 
 
-                    <div className="mt-150 w-100%">
+                    <div className="mt-142 w-100%">
                         <img src={centerline} alt="centerline"/>
                     </div>
 
